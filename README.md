@@ -1,6 +1,6 @@
 # Diffbot
 
-TODO: Write a gem description
+Library for pulling data from the Diffbot API.
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+you can grab the entry with the +get+ method.
+
+```ruby
+ require 'diffbot'
+ Diffbot::API.token = 'your diffbot token'
+ article = Diffbot::Article.get("whatever url you want")
+```
 
 ## Contributing
 
